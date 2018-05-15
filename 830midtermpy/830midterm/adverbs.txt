@@ -1,0 +1,49 @@
+'beautifully', 'lazily', 'quickly', 'awkwardly', 'dearly', 'loftily', 'colorfully', 'rapidly', 'deeply', 'loosely'
+
+
+
+
+import random
+
+"""
+test_file = open('sentences.txt')
+
+
+print(test_file.read())
+
+
+sentence_replace = {
+        <<ADVERB>> : adverb.replace(list.adverbs),
+        <<ADJECTIVE>> : adverb.replace(list.adverbs),
+        <<VERB>> : verb.replace(list.verb)
+    }
+
+""" 
+
+newv = ""
+
+adverb_list = ['beautifully', 'lazily', 'quickly', 'awkwardly', 'dearly', 'loftily', 'colorfully', 'rapidly', 'deeply', 'loosely' ]
+
+#f = open('adverbs.txt', 'r')
+advlist = ','.join(adverb_list)
+#adverbs = f.readlines()
+#newv = str(adverbs)
+printed = (advlist.split(","))
+#print(newv)
+
+print(random.choice(printed))
+#str.replace(old, new)
+
+
+words = open('sentences.txt', 'r')
+str new_words = words 
+sentence = new_words.split()
+str newwords = sentence 
+
+for word in sentence: 
+    strings = word 
+    print strings 
+
+sent = strings + ADVERB + ADJECTIVE + VERB
+
+'The dog {0} {1} on the {2} lawn'.format(adverb, verb, adjective)

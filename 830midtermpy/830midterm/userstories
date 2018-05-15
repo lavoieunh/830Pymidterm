@@ -1,0 +1,28 @@
+
+User will need to enter their card into the ATM. ATM will read card, and user will remove. ATM will then prompt the user to enter pin. ATM will accept OR reject pin. If pin is accepted, then user will be prompted withdrawal or deposit.
+
+
+
+    Write a user story for a customer withdrawing cash from the customer’s account. 
+
+
+
+Pre requisite "Pre Req": above is required.
+
+If withdrawal, then the user will be prompted from which account. Upon account choice, the user can select from a pre-defined withdrawal amount, or enter their own amount. Once amount has been selected, then customer will receive money. ATM will ask for a printed, emailed, or no balance to return. ATM will prompt for additional transactions, or to exit. If additional transactions, follow user stories for those. If exit, then close the session.
+
+
+
+Write a user story for a customer making a deposit into one of the customer’s accounts. 
+
+
+Pre requisite "Pre Req": above is required.
+
+If deposit, then the user will be prompted which account to make a deposit to. Upon account choice, the user will enter the deposit amount. User will then select where the source of the deposit is - check or cash. ATM will then prompt the user to insert the check or cash into the slot. ATM will verify that the cash count is correct, and validate that a check has been deposited, and the amount is verified by the OCR in the ATM. ATM will ask user if they would like a printed, emailed, or no balance to return. ATM will prompt for additional transactions, or to exit. If additional transactions, follow user stories for those. If exit, then close the session.
+
+
+Write a user story for a bank teller retrieving deposited checks from the ATM.
+
+ 
+The bank teller would not need to know any of the above. The impactful pieces would be to meet the Pre-Reqs of checks being in the ATM. The teller would then need to validate who they are in order to open the ATM. Once that has been done, 
+all the checks will be collected by the teller. The teller will then confirm location of checks to be sent to a corporate center that validates the check amont. The check amount read by the ATM's OCR will need to be validated against the center;s amount via a hashmap or the like.
